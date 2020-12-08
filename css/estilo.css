@@ -1,0 +1,326 @@
+body {
+  font-family: "Source Sans Pro", arial, helvetica, sans-serif;
+  /*    'Open sans' foi tirado do site do google fonts, explicação na <head> do arquivo index.html*/
+  color: #666;
+  /*    assim todas as letras vão pra uma cor cinza escuro em vez do padrão preto*/
+  line-height: 1.7;
+  /*    espaçamento entre as linhas do texto*/
+}
+a {
+  transition: color 0.2s linear, border 0.2s linear;
+  /*    assim todo meu a (a tag link no html) vai ter uma transição na cor no tempo x e com efeito linear */
+  /*    depois do virgula vai por a transição na borda de baixo*/
+  text-decoration: none;
+  /*    todo meu link não vai ter mais sublinhado*/
+  border-bottom: 1px dotted;
+  /*    vai colocar pontinhos no ligar do sublinhado*/
+  color: #49b1bf;
+}
+a:hover {
+  border-bottom-color: transparent;
+  color: #bf8849;
+}
+p {
+  margin: 0 0 2em;
+}
+img {
+  max-width: 100%;
+  /*    Isso serve para que as imagens não fiquem sobrepondo umas as outras, ATENÇÃO com imagens que você não quer mudar*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #49b1bf;
+  font-weight: normal;
+  /*    sem negrito*/
+  margin: 1em 0;
+  /*    0 pra cima 0 pra direita 24 pra baixo e 0 pra esquerda*/
+  /*    1em é a proporção de um para o tamanho da fonte. se a fonte é de 24px o 1em é = a fonte-size. Assim cada titulo tem um expassamento proprio*/
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 15px;
+}
+sub,
+sup {
+  /*    palavra que fica escrita acima da palavra do texto e abaixo*/
+  font-size: 12px;
+}
+
+.hidden {
+  /*    para esconder o elemento span, para que ele não apareça na tela e ainda assim fique sendo um texto acessivel*/
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  /*    list-style-position: inside;*/
+  /*    para corrigir os bullets que ficam para fora do alinhamento (bullet, numeros e pontos de cada item da lista)*/
+  padding-left: 1.1em;
+}
+/*esse padding-left acima e abaixo seria para dar o espaçamento dos bullets na lista, porem assim ele fica diferente para quando é numero e ponto*/
+li {
+  padding-left: 0.3em;
+}
+.ul-icons {
+  list-style-type: none;
+  /*    tirei os bullets*/
+  padding-left: 0;
+  /*    coloquei eles mais pra trás*/
+}
+.ul-icons li {
+  display: inline-block;
+  /*    eles tem comportamento de linha, eu quero que eles fiquem com comportamento de bloco, mas quero que fiquem um ao lado do outro uma linha bloco. inline-block */
+  font-size: 1.5em;
+  /*    como é fonte eu posso usar as propriedades de fonte*/
+  color: #49b1bf;
+}
+.icon-link {
+  /* background: red; */
+}
+
+span {
+  font-weight: bold;
+}
+
+/*IMAGENS*/
+.imagem-link {
+  border: 0;
+  padding-left: 1em;
+}
+.recent-works-card img {
+  border-radius: 10px;
+  overflow: hidden;
+  /*    overflow: hidden; Para esconder o conteudo, as vezes tem que colocar*/
+}
+.recent-works-card-title {
+  color: #666;
+}
+
+/*TABELAS*/
+.table {
+  width: 100%; /*    para ocupar a area toda disponivel*/
+  margin: 0 0 2em 0;
+  border-collapse: collapse; /*    isso fara com quer não tenha espaços no background das tres colunas da tabela*/
+  text-align: left;
+}
+.table td {
+  padding: 0.75em;
+}
+.table th {
+  background: #ccc;
+  padding: 0.75em;
+  color: #bf8849;
+}
+.table-th:first-child {
+  border-top-left-radius: 10px;
+}
+.table-th:last-child {
+  border-top-right-radius: 10px;
+}
+.table-tbody tr td:first-child {
+  border-radius: 10px 0 0 100px;
+}
+.table-tbody tr td:last-child {
+  border-radius: 0 100px 10px 0;
+}
+/*
+.table tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+*/
+
+.table tbody tr:first-child td {
+  border-top: 2px solid #666;
+}
+.table tbody tr:last-child td {
+  border-bottom: 2px solid #666;
+}
+
+.table tbody tr:nth-child(even) td {
+  /*odd para numeros impares*/
+  /*even para numero pares*/
+  background: #eee;
+}
+.table-alternate tbody td,
+.table-alternate tbody tr:first-child td,
+.table-alternate tbody tr:last-child td {
+  border: 1px solid #ddd;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*    COm o position: fixed; ele vai ficar parado no top: 0; e a esquerda que é left: 0;*/
+  height: 100%;
+  width: 35%;
+  /*    height: vai dar a altura de toda a pagina e uma width (largura) de tantos% da pagina*/
+  padding: 124px 54px 72px;
+  /*    o padding: soma o tamanho do elemento, temos agora 100% de pagina mais os px adicionados. Para corrigir isso vamos adicionar o borderbox*/
+  box-sizing: border-box;
+  background-image: url(../images/overlay.png),
+    url(../images/fundo-azul-e-laranja.jpg);
+  /*    Vamos trabalhar com duas imagens, overlay essa é como uma capa cinza*/
+  background-position: left top;
+  /*    posicionando a imagem, preferi no left, na aula esta center*/
+  background-size: auto, cover;
+  /*    esse comando que vai dar a diferença, pois vai mostrar toda a imagem. A primeira auto é para o background: overlay, a segunda é pra o bg.jpg*/
+  text-align: right;
+}
+.main-header p {
+  color: #a2a2a2;
+}
+.main-header-title {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: aliceblue;
+  font-weight: normal;
+  /*    vai tirar o negrito*/
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main-header-title strong {
+  color: white;
+  font-weight: normal;
+}
+.main-header-link {
+  color: inherit;
+  /*    assim ele vai herdar a cor do elemento main-header-title, assim o dia que precisar mudar a cor. só precisara mudar em apenas um lugar*/
+}
+.main-header-link:hover {
+  color: #49b1bf;
+}
+.main-header-link img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: clamp(20rem, 20vw, 30rem);
+}
+.main-content {
+  width: 65%;
+  /*    pois no main-header estamos usando 35¨% da pagina*/
+  margin-left: 35%;
+  /*    Dando um espaço igual ao main-header width, para que ocupemos 100% da pagina.*/
+  padding: 12px 54px 72px;
+  /*    o padding: soma o tamanho do elemento, temos agora 100% de pagina mais os px adicionados. Para corrigir isso vamos adicionar o borderbox*/
+  box-sizing: border-box;
+}
+
+/*Grid*/
+.row {
+  overflow: auto;
+}
+/*formatação para pegar as listas e fazer com que elas fiquem em duas colunas*/
+.col-1 img {
+  width: 10%;
+  float: left;
+  padding: 20px 20px 0 0;
+}
+/*FOOTER*/
+.main-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 35%;
+  /*    mesma largura do header*/
+  left: 0;
+  padding: 0 54px 72px 0;
+  text-align: right;
+  box-sizing: border-box;
+}
+.main-footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.main-footer a:hover {
+  color: #49b1bf;
+}
+.main-footer,
+.ul-icons a {
+  font-size: 0.85em;
+  border-bottom: none;
+}
+.copyright {
+  list-style: none;
+}
+.copyright li {
+  display: inline-block;
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  padding: 0 0.75em;
+  line-height: 1;
+  font-size: 0.8em;
+}
+.copyright li:first-child {
+  border-left: 0;
+}
+.copyright li:last-child {
+  padding-right: 0;
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    width: 100%;
+    height: 30vw;
+    border-radius: 20px;
+  }
+  .main-header-link img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: clamp(9rem, 10vw, 20rem);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -45vw;
+    margin-top: -20vw;
+  }
+  .main-header-title {
+    font-size: 1em;
+    line-height: 1.5;
+    color: aliceblue;
+    font-weight: normal;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -5vw;
+    margin-top: -15vw;
+    padding-right: 5px;
+  }
+  .main-footer {
+    position: relative;
+    bottom: 0;
+  }
+  .main-content {
+    width: 100vw;
+    /*    pois no main-header estamos usando 35¨% da pagina*/
+    margin: 0px;
+    /* Dando um espaço igual ao main-header width, para que ocupemos 100% da pagina. */
+    padding: 5vw;
+    /*    o padding: soma o tamanho do elemento, temos agora 100% de pagina mais os px adicionados. Para corrigir isso vamos adicionar o borderbox*/
+    /* box-sizing: none; */
+  }
+}

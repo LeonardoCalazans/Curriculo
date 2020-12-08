@@ -1,0 +1,225 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Leonardo Pinto Silva Calazans - Curriculum</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Leonardo Pinto Silva Calazans">
+    <meta name="description" content="Projeto curriculo">
+    <meta name="keywords" content="html5, tecnologia, css, curriculum, curriculo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--        Esse link é do site google fonts, que disponibiliza fonts de graça pra você colocar no seu navegador, mas deve ser aplicada no css, senão nada vai mudar no seu navegador-->
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <!--        load all styles do site fontawesome, site de icones como facebook, twitter e instagram-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--        Esse link foi tirado do site css normalize ou css reset, ele faz uma formatação da maioria dos navegadores deixando pronto pra edição mais detalhada do css estilo. ELA DEVE VIR PRIMEIRO, pois assim toda edição a seguir vem depois dela.-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--            <script src="https://kit.fontawesome.com/5d7e463fbe.js" crossorigin="anonymous"></script>-->
+    <!--            teste para poder usar icones na minha pagina, importando do site da fot-awesome-->
+    <!-- <meta name="viewport" content="width=device-width, inital-scale=1.0">    -->
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a href="index.html" target="_blank" class="main-header-link imagem-link">
+            <img src="images/avatar_640.jpeg.jpeg"
+                alt="Foto de perfil do Programador Leonardo sentado, homem, possue barba e traja uma camisa polo com listras horizontais azul e branco">
+        </a>
+        <h1 class="main-header-title">
+            <strong>Leonardo Pinto Silva Calazans</strong><br>
+            Estudante de Análise e Desenvolvimento de Sistemas <br>
+            Unicarioca<br>
+            <!--<br> serve par pula a linha e <strong>negrito</strong>-->
+        </h1>
+
+    </header>
+
+    <main class="main-content">
+
+        <section class="main-content-section">
+            <h2>Sobre mim</h2>
+            <p>Experiências em pequenos projetos de HTML, CSS e Javascript, aprendendo atualmente como trabalhar com
+                frameworks e banco de dados. Bolsista na uni Carioca, me destacando por ser sempre proativo e gostar de
+                desafios, sem medo de sair da zona de conforte e esforçado, busco uma nova carreira na área de
+                tecnologia. </p>
+        </section>
+        <!--            <section> criará uma quebra de linha na pagina definindo o fim e o começo de uma sessão</section>-->
+        <section class="main-content-section">
+            <!--                place hoder é apenas uma dica, as vezes nem é lido pelo browser. TODO O SITE DEVE ESTAR ACESSIVEL nunca deve substituir o label-->
+
+            <h3>Habilidades</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="table-th">Instituição</th>
+                        <th>Curso</th>
+                        <th class="table-th">Nivel</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <!--                            colspan serve para criar colunas invisiveis, para alinha o ultimo item-->
+                        <td></td>
+                    </tr>
+                </tfoot>
+                <tbody class="table-tbody">
+                    <tr>
+                        <td>Cursando na Unicarioca</td>
+                        <td>ANALISE E DESENVOLVILMENTO DE SISTEMAS</td>
+                        <td>3º Periodo na Unicarioca 2021.1</td>
+                    </tr>
+                    <tr>
+                        <td>Autodidata</td>
+                        <td>INGLÊS BÁSICO</td>
+                        <td>Aprimorando todos os dias para o mercado de trabalho</td>
+                    </tr>
+                    <tr>
+                        <td>Autodidata</td>
+                        <td>MICROSOFT OFFICE</td>
+                        <td>Word e Exel básico</td>
+                    </tr>
+                    <tr>
+                        <td>Linguagens de programação</td>
+                        <td>C – JAVASCRIPT</td>
+                        <td>Nivel intermediário</td>
+                    </tr>
+                    <tr>
+                        <td>Udemy</td>
+                        <td>Curso Web Design Completo: HTML5, CSS3 e JS</td>
+                        <td>Básico ao avançado</td>
+                    </tr>
+                    <tr>
+                        <td>Udemy</td>
+                        <td>O curso completo de Banco de Dados e SQL</td>
+                        <td>Cursando</td>
+                    </tr>
+                    <tr>
+                        <td>Cursando Origamid</td>
+                        <td>Frontend fullstack</td>
+                        <td>Básico ao avançado</td>
+                    </tr>
+                    <tr>
+                        <td>Autodidata</td>
+                        <td>MONTAGEM E MANUTENÇÃO DE COMPUTADORES BASICA </td>
+                        <td>Desde sempre fazendo a propria manutenção e a de terceiros</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="main-content-section">
+            <h3>Projetos de aprendizado</h3>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <article class="recent-works-card">
+                        <a class="imagem-link" target="_blank"
+                            href="https://kalldrayck.github.io/Projeto-responsivo-cursinho/">
+                            <img src="images/logo_mob.png" alt="Github Projeto responsivo">
+                            <p class="recent-works-card-title"><strong>Projeto responsivo </strong> </p>
+                        </a>
+                    </article>
+
+                </div>
+                <div class="row">
+                        <!--row-->
+                        <div class="row">
+                            <div class="col-1">
+
+                                <article class="recent-works-card">
+                                    <a class="imagem-link" target="_blank"
+                                        href="https://github.com/KallDrayck/NextLevelWeek3">
+                                        <img src="images/nlwwhite.png" alt="Github projeto NLW 3">
+                                        <p class="recent-works-card-title"><strong>Github - Imersão Next level week
+                                                3</strong> </p>
+                                    </a>
+                                </article>
+
+                            </div>
+                            <!--row-->
+                            <div class="row">
+                                <div class="col-1">
+
+                                    <article class="recent-works-card">
+                                        <a class="imagem-link" target="_blank"
+                                            href="https://kalldrayck.github.io/ProjetoInfusion/">
+                                            <img src="images/infusion.png" alt="Projeto Infusion">
+                                            <p class="recent-works-card-title"><strong>Infusion - Home Page</strong> </p>
+                                        </a>
+                                    </article>
+
+                                </div>
+                                <!--row-->
+        </section>
+        <section class="main-content-section">
+            <h3>Redes e contato</h3>
+                <ul class="ul-icons">
+                    <li><a target="_blank" href="https://pt.stackoverflow.com/users/181036/leonardo-pinto-silva"><span
+                        class="hidden">Stackoverflow profile</span><i class="fab fa-stack-overflow fa-3x icon-link"></i></i></a></li>
+                        <li><a target="_blank" href="https://github.com/KallDrayck"><span
+                            class="hidden">Github profile</span><i class="fab fa-github fa-3x icon-link"></i></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/LeoPintoSilva"><span
+                                class="hidden">Twitter</span><i class="fab fa-twitter fa-3x icon-link"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/drayck/?hl=pt-br"><span
+                                class="hidden">Instagram</span><i class="fab fa-instagram fa-3x icon-link"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/leonardo.pintosilva.1"><span
+                                class="hidden">Facebook</span><i class="fab fa-facebook fa-3x icon-link"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/leonardo-calazans-39a03213a/"
+                        ><span class="hidden">Linkedin</span><i class="fab fa-linkedin fa-3x icon-link"></i></a></li>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5521966479443&text=Bem%20vindo%2C%20voc%C3%AA%20foi%20direcionado%20do%20site%20curr%C3%ADculo.%20Deixe%20sua%20mensagem%20que%20sera%20respondido%20em%20breve"><span class="hidden">Whatsapp</span><i class="fab fa-whatsapp fa-3x icon-link"></i></a></li>
+                </ul>
+        </section>
+
+        <section class="main-content-section"></section>
+        <div class="col-1">
+            <address>
+                <!--                 serve para dar expor a informação do dono do site, para entrar em contato-->
+                <p>
+                    <span>Telefone:</span><br>
+                    021-9-6647-9443<br>
+                    021-9-3300-0272
+                </p>
+
+                <p>
+                    <span>E-mail:</span><br> 
+                    leonardopintosilva@hotmail.com
+                </p>
+                <!--                    assim  fica muito mais semantico, a maquina consegue entender, o leitor de tela consegue entender, o mecanismo de busca consegue entender. E todos eles tão dentro da tag address que representa a forma de contato do dono do site, ou se tivesse numa tag article do dono daquele artigo-->
+            </address>
+        </div>
+        <!--row-->
+        <!--                    segundo filho-->
+        </div>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+
+        <ul class="ul-icons">
+            <li><a target="_blank" href="https://twitter.com/LeoPintoSilva" ><span
+                        class="hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/drayck/?hl=pt-br" ><span
+                        class="hidden">Instagram</span><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/leonardo.pintosilva.1" ><span
+                        class="hidden">Facebook</span><i class="fab fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/leonardo-calazans-39a03213a/"
+                    ><span class="hidden">Linkedin</span><i class="fab fa-linkedin"></i></a></li>
+            <li><a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5521966479443&text=Bem%20vindo%2C%20voc%C3%AA%20foi%20direcionado%20do%20site%20curr%C3%ADculo.%20Deixe%20sua%20mensagem%20que%20sera%20respondido%20em%20breve"
+                    ><span class="hidden">Whatsapp</span><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>© Untitled</li>
+            <li>Design: <a herf="#">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
