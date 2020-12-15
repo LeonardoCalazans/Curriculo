@@ -21,7 +21,7 @@ a:hover {
   color: #bf8849;
 }
 p {
-  margin: 0 0 2em;
+  margin: 0 0 2vw;
 }
 img {
   max-width: 100%;
@@ -36,7 +36,7 @@ h6 {
   color: #49b1bf;
   font-weight: normal;
   /*    sem negrito*/
-  margin: 1em 0;
+  margin: 1vw 0;
   /*    0 pra cima 0 pra direita 24 pra baixo e 0 pra esquerda*/
   /*    1em é a proporção de um para o tamanho da fonte. se a fonte é de 24px o 1em é = a fonte-size. Assim cada titulo tem um expassamento proprio*/
 }
@@ -78,11 +78,11 @@ ol {
   padding: 0;
   /*    list-style-position: inside;*/
   /*    para corrigir os bullets que ficam para fora do alinhamento (bullet, numeros e pontos de cada item da lista)*/
-  padding-left: 1.1em;
+  padding-left: 1.1vw;
 }
 /*esse padding-left acima e abaixo seria para dar o espaçamento dos bullets na lista, porem assim ele fica diferente para quando é numero e ponto*/
 li {
-  padding-left: 0.3em;
+  padding-left: 0.3vw;
 }
 .ul-icons {
   list-style-type: none;
@@ -96,9 +96,7 @@ li {
   font-size: 1.5em;
   /*    como é fonte eu posso usar as propriedades de fonte*/
   color: #49b1bf;
-}
-.icon-link {
-  /* background: red; */
+  
 }
 
 span {
@@ -108,7 +106,7 @@ span {
 /*IMAGENS*/
 .imagem-link {
   border: 0;
-  padding-left: 1em;
+  padding-left: 1vw;
 }
 .recent-works-card img {
   border-radius: 10px;
@@ -127,16 +125,16 @@ span {
 /*TABELAS*/
 .table {
   width: 100%; /*    para ocupar a area toda disponivel*/
-  margin: 0 0 2em 0;
+  margin: 0 0 2vw 0;
   border-collapse: collapse; /*    isso fara com quer não tenha espaços no background das tres colunas da tabela*/
   text-align: left;
 }
 .table td {
-  padding: 0.75em;
+  padding: 0.75vw;
 }
 .table th {
   background: #ccc;
-  padding: 0.75em;
+  padding: 0.75vw;
   color: #bf8849;
 }
 .table-th:first-child {
@@ -167,7 +165,7 @@ span {
 .table tbody tr:nth-child(even) td {
   /*odd para numeros impares*/
   /*even para numero pares*/
-  background: #eee;
+  background: rgb(255, 255, 255);
 }
 .table-alternate tbody td,
 .table-alternate tbody tr:first-child td,
@@ -226,13 +224,18 @@ span {
 .main-content {
   width: 65%;
   /*    pois no main-header estamos usando 35¨% da pagina*/
-  margin-left: 35%;
+  margin-left: 32%;
   /*    Dando um espaço igual ao main-header width, para que ocupemos 100% da pagina.*/
-  padding: 12px 54px 72px;
+  padding-left: 5.6vw;
   /*    o padding: soma o tamanho do elemento, temos agora 100% de pagina mais os px adicionados. Para corrigir isso vamos adicionar o borderbox*/
   box-sizing: border-box;
 }
-
+.main-content-section{
+  background:rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 20px;
+  padding: 1vw;
+}
 /*Grid*/
 .row {
   overflow: auto;
@@ -283,10 +286,12 @@ span {
 }
 
 @media (max-width: 500px) {
+  
   .main-header {
     position: relative;
     top: 2vw;
     left: 2vw;
+    right: 2vw;
     width: 100%;
     height: 30vw;
     border-radius: 20px;
@@ -294,7 +299,7 @@ span {
   .main-header-link img {
     border-radius: 50%;
     overflow: hidden;
-    width: clamp(9rem, 10vw, 20rem);
+    width: clamp(30vw, 40vw, 50vw);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -313,19 +318,22 @@ span {
     top: 50%;
     margin-left: -5vw;
     margin-top: -15vw;
-    padding-right: 5px;
+    padding-right: 5vw;
   }
   .main-footer {
-    position: relative;
-    bottom: 0;
+    display: none;
   }
   .main-content {
     width: 100vw;
     /*    pois no main-header estamos usando 35¨% da pagina*/
-    margin: 0px;
+    margin: 0;
     /* Dando um espaço igual ao main-header width, para que ocupemos 100% da pagina. */
-    padding: 5vw;
+    padding: 3vw;
     /*    o padding: soma o tamanho do elemento, temos agora 100% de pagina mais os px adicionados. Para corrigir isso vamos adicionar o borderbox*/
     /* box-sizing: none; */
+  }
+  .main-content-section{
+    padding: 0;
+
   }
 }
