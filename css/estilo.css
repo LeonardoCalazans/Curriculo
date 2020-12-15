@@ -118,6 +118,11 @@ span {
 .recent-works-card-title {
   color: #666;
 }
+.recent-works-card-title:hover {
+  text-decoration: underline;
+  transition: .5s;
+  color: #bf8849;
+}
 
 /*TABELAS*/
 .table {
