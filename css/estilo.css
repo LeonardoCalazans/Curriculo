@@ -108,13 +108,20 @@ span {
   border: 0;
   padding-left: 1vw;
 }
+.imagem-link img:hover{
+  background:rgba(0, 0, 0, 0.1);
+
+}
 .recent-works-card img {
   border-radius: 10px;
   overflow: hidden;
   /*    overflow: hidden; Para esconder o conteudo, as vezes tem que colocar*/
+  height: 50px;
 }
 .recent-works-card-title {
   color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 .recent-works-card-title:hover {
   text-decoration: underline;
@@ -284,7 +291,12 @@ span {
 .copyright li:last-child {
   padding-right: 0;
 }
-
+@media (max-width: 800px) {
+ 
+.recent-works-card img {
+  height: 40px;
+  }
+}
 @media (max-width: 500px) {
   
   .main-header {
@@ -335,5 +347,8 @@ span {
   .main-content-section{
     padding: 0;
 
+  }
+  .recent-works-card img {
+  height: 30px;
   }
 }
