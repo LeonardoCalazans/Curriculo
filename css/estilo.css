@@ -291,6 +291,7 @@ span {
 .copyright li:last-child {
   padding-right: 0;
 }
+
 @media (max-width: 800px) {
  
 .recent-works-card img {
