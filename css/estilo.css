@@ -305,7 +305,7 @@ span {
     top: 2vw;
     left: 2vw;
     right: 2vw;
-    width: 100%;
+    width: 96%;
     height: 30vw;
     border-radius: 20px;
   }
@@ -337,7 +337,7 @@ span {
     display: none;
   }
   .main-content {
-    width: 100vw;
+    width: 100%;
     /*    pois no main-header estamos usando 35¨% da pagina*/
     margin: 0;
     /* Dando um espaço igual ao main-header width, para que ocupemos 100% da pagina. */
