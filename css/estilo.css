@@ -1,7 +1,10 @@
 body {
+  --cor-laranja: #af6a1a;
+  --cor-azul: #49b1bf;
+  --cor-font: #666;
   font-family: "Source Sans Pro", arial, helvetica, sans-serif;
   /*    'Open sans' foi tirado do site do google fonts, explicação na <head> do arquivo index.html*/
-  color: #666;
+  color: var(--cor-font);
   /*    assim todas as letras vão pra uma cor cinza escuro em vez do padrão preto*/
   line-height: 1.7;
   /*    espaçamento entre as linhas do texto*/
@@ -15,16 +18,12 @@ a {
   /*    todo meu link não vai ter mais sublinhado*/
   border-bottom: 1px dotted;
   /*    vai colocar pontinhos no ligar do sublinhado*/
-  color: #49b1bf;
+  color: var(--cor-azul);
 }
 a:hover {
   border-bottom-color: transparent;
-  color: #e9b57a;
+  color: var(--cor-laranja);
 }
-p {
-  padding-left: 0.5em;
-}
-
 img {
   max-width: 100%;
   /*    Isso serve para que as imagens não fiquem sobrepondo umas as outras, ATENÇÃO com imagens que você não quer mudar*/
@@ -35,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #49b1bf;
+  color: var(--cor-azul);
   font-weight: normal;
   /*    sem negrito*/
   margin: 1vw 0;
@@ -102,7 +101,7 @@ li {
   /*    eles tem comportamento de linha, eu quero que eles fiquem com comportamento de bloco, mas quero que fiquem um ao lado do outro uma linha bloco. inline-block */
   font-size: 1.5em;
   /*    como é fonte eu posso usar as propriedades de fonte*/
-  color: #49b1bf;
+  color: var(--cor-azul);
   
 }
 span {
@@ -124,14 +123,14 @@ span {
 
 }
 .recent-works-card-title {
-  color: #666;
+  color: var(--cor-font);
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 .recent-works-card-title:hover {
   text-decoration: underline;
   transition: .5s;
-  color: #e9b57a;
+  color: var(--cor-laranja);
 }
 
 /*TABELAS*/
@@ -147,14 +146,16 @@ span {
 .table th {
   background: rgb(175, 175, 175);
   padding: 0.75vw;
-  color: #e9b57a;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  color: var(--cor-laranja);
 }
 
 .table tbody tr:first-child td {
-  border-top: 2px solid #666;
+  border-top: 2px solid var(--cor-font);
 }
 .table tbody tr:last-child td {
-  border-bottom: 2px solid #666;
+  border-bottom: 2px solid var(--cor-font);
 }
 
 .table tbody tr:nth-child(even) td {
@@ -177,7 +178,7 @@ span {
   background-image: url(../images/overlay.png),
     url(../images/unnamed.jpg);
   /*    Vamos trabalhar com duas imagens, overlay essa é como uma capa cinza*/
-  background-position: left top;
+  background-position: right top;
   /*    posicionando a imagem, preferi no left, na aula esta center*/
   background-size: auto, cover;
   /*    esse comando que vai dar a diferença, pois vai mostrar toda a imagem. A primeira auto é para o background: overlay, a segunda é pra o bg.jpg*/
@@ -193,7 +194,7 @@ span {
   font-weight: normal;
   /*    vai tirar o negrito*/
   text-align: right;
-  color: #e9b57a;
+  color: var(--cor-laranja);
 }
 .main-header-title strong {
   color: white;
@@ -204,7 +205,7 @@ span {
   /*    assim ele vai herdar a cor do elemento main-header-title, assim o dia que precisar mudar a cor. só precisara mudar em apenas um lugar*/
 }
 .main-header-link:hover {
-  color: #49b1bf;
+  color: var(--cor-azul);
 }
 .main-header-link img {
   border-radius: 50%;
@@ -260,7 +261,7 @@ span {
   color: rgba(255, 255, 255, 0.5);
 }
 .main-footer a:hover {
-  color: #49b1bf;
+  color: var(--cor-azul);
 }
 .main-footer,
 .ul-icons a {
@@ -289,6 +290,7 @@ span {
     position: relative;
     width: 100%;
     height: 30vw;
+    background-position: left center;
   }
   .main-header-link img {
     border-radius: 50%;
@@ -299,20 +301,6 @@ span {
     top: 50%;
     margin-left: -45vw;
     margin-top: -15vw;
-  }
-  .main-header-title {
-    font-size: 1.8em;
-    line-height: 1.5;
-    color: aliceblue;
-    font-weight: normal;
-    text-align: right;
-    color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -10vw;
-    margin-top: -9vw;
-
   }
   .main-footer {
     display: none;
@@ -329,12 +317,17 @@ span {
 .recent-works-card img {
   height: 30px;
   }
+  .main-header{
+   /* superior | direita | inferior | esquerda */
+    padding: 0 10px 0 10px;
+    /* margin-right: 14px; */
+  }
   .main-header-link img {
     width: 25vw;
     top: 17.5vw;
   }
   .main-header-title {
-    font-size: .90em;
+    font-size: 1.1em;
   }
   .ul-icons a {
     font-size: 0.5em;
