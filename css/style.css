@@ -1,0 +1,146 @@
+body{
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Inter', arial, helvetica, sans-serif;
+    margin: 5%;
+    padding: 0;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.438rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.21rem;
+}
+h4{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.063rem;
+}
+h5{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+p{
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #C4C4C4;
+}
+button{
+    background: transparent;
+    color: #FFFFFF;
+    border-radius: .5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.063rem;
+}
+button p{
+    color: #FFFFFF;
+}
+.border-gradient {
+    border: 0.125rem solid;
+    border-image-slice: 1;
+    border-width: 0.125rem;
+    border-radius: 5rem;
+}
+.border-gradient-pink-rigth {
+    border-image-source: linear-gradient(to right, #D24074, #6518B4);
+}
+.border-gradient-purple-rigth {
+    border-image-source: linear-gradient(to right, #9358F7, #10D7E2);
+}
+.border-gradient-pink-left {
+    border-image-source: linear-gradient(to left, #D24074, #6518B4);
+}
+.border-gradient-purple-left {
+    border-image-source: linear-gradient(to left, #9358F7, #10D7E2);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h3{
+    color: #00D2DF;
+}
+.section{
+    background-color: #151515;
+    padding: 5rem 0;
+}
+.presentation{
+}
+#name{
+    color: #00D2DF;
+}
+.flex-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.button-flex :first-child{
+    padding-right : 1.063rem;
+}
+.flex-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.25rem 0;
+}
+.about-me{
+}
+.experience{
+
+}
+.title-company{
+    width: 50%;
+    padding: 1.813rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C4C4C4;
+}
+.selected{
+    border-bottom: 2px solid #00D2DF;
+    color: #FFFFFF;
+}
+.m-p-0{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.title-company-descripition{
+    color: #00D2DF;
+}
+.projects{
+    margin-bottom: 2.875rem;
+}
+.projects-tec{
+    color: #00D2DF;
+}
+.projects-tec-button{
+    width: 100%;
+}
+.projects-no-photo{
+    width: 100%;
+    padding: 1.875rem 0;
+    color: #00D2DF;
+    border-left: #00D2DF 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
