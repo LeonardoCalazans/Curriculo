@@ -1,6 +1,15 @@
+:root{
+    --purple: #490988;
+    --blue: #10D7E2;
+    --background-primary: #121212;
+    --background-secondary: #151515;
+    --font-color-primary: #FFFFFF;
+    --font-color-secondary: #C4C4C4;
+    --font-color-tertiary: #00D2DF;
+}
 body{
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: var(--background-primary);
+    color: var(--font-color-primary);
     font-family: 'Inter', arial, helvetica, sans-serif;
     margin: 5%;
     padding: 0;
@@ -34,57 +43,32 @@ p{
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 1.25rem;
-    color: #C4C4C4;
+    color: var(--font-color-secondary);
 }
 button{
     background: transparent;
-    color: #FFFFFF;
+    color: var(--font-color-primary);
     border-radius: .5rem;
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.063rem;
 }
 button p{
-    color: #FFFFFF;
+    color: var(--font-color-primary);
 }
-.border-gradient {
-    border: 0.125rem solid;
-    border-image-slice: 1;
-    border-width: 0.125rem;
-    border-radius: 5rem;
+.button-grad {
+    background-image: linear-gradient(to right, var(--blue) 0%, var(--purple)  51%, var(--blue)  100%);
+    transition: 1s;
+    background-size: 200% auto;
 }
-.border-gradient-pink-rigth {
-    border-image-source: linear-gradient(to right, #D24074, #6518B4);
+.button-grad:hover, .button-grad-blue:hover {
+    background-position: right center;
+    text-decoration: none;
 }
-.border-gradient-purple-rigth {
-    border-image-source: linear-gradient(to right, #9358F7, #10D7E2);
-}
-.border-gradient-pink-left {
-    border-image-source: linear-gradient(to left, #D24074, #6518B4);
-}
-.border-gradient-purple-left {
-    border-image-source: linear-gradient(to left, #9358F7, #10D7E2);
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-.header h3{
-    color: #00D2DF;
-}
-.section{
-    background-color: #151515;
-    padding: 5rem 0;
-}
-.presentation{
-}
-#name{
-    color: #00D2DF;
-}
-.flex-sb{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.button-grad-blue {
+    background-image: linear-gradient(to right, var(--purple) 0%, var(--blue)  51%, var(--purple)  100%);
+    transition: 1s;
+    background-size: 200% auto;
 }
 .button-flex{
     display: flex;
@@ -95,11 +79,39 @@ button p{
 .button-flex :first-child{
     padding-right : 1.063rem;
 }
+.button-projeto{
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h3{
+    color: var(--font-color-tertiary);
+}
+.section{
+    background-color: var(--background-secondary);
+    padding: 5rem 0;
+}
+.presentation{
+}
+#name{
+    color: var(--font-color-tertiary);
+}
+.flex-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .flex-icon{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 2.25rem 0;
+}
+.icon:hover{
+    filter: hue-rotate(78deg);
+    transition: all 500ms;
 }
 .about-me{
 }
@@ -112,11 +124,11 @@ button p{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #C4C4C4;
+    color: var(--font-color-secondary);
 }
 .selected{
-    border-bottom: 2px solid #00D2DF;
-    color: #FFFFFF;
+    border-bottom: 2px solid var(--font-color-tertiary);
+    color: var(--font-color-primary);
 }
 .m-p-0{
     padding: 0;
@@ -124,13 +136,13 @@ button p{
     padding-bottom: 1rem;
 }
 .title-company-descripition{
-    color: #00D2DF;
+    color: var(--font-color-tertiary);
 }
 .projects{
     margin-bottom: 2.875rem;
 }
 .projects-tec{
-    color: #00D2DF;
+    color: var(--font-color-tertiary);
 }
 .projects-tec-button{
     width: 100%;
@@ -138,8 +150,8 @@ button p{
 .projects-no-photo{
     width: 100%;
     padding: 1.875rem 0;
-    color: #00D2DF;
-    border-left: #00D2DF 2px solid;
+    color: var(--font-color-tertiary);
+    border-left: var(--font-color-tertiary) 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
