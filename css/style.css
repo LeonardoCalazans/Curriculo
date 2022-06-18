@@ -163,6 +163,50 @@ button p{
     align-items: center;
     justify-content: center;
 }
-    footer{
-    padding: 0 5%;
+footer{
+padding: 0 5%;
+}
+
+#goHome {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-secondary);
+    text-indent: -9999px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 10;
+    /* display: none; */
     }
+#goHome span {
+    content: "▲";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: var(--blue);
+}
+#goHome:hover {
+    transition: 0.2s;
+    background-color: var(--purple);
+    color: var(--blue);
+}
+#goHome:hover span {
+    border-bottom-color: var(--blue);
+}
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
