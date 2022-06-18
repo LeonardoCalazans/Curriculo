@@ -11,7 +11,7 @@ body{
     background-color: var(--background-primary);
     color: var(--font-color-primary);
     font-family: 'Inter', arial, helvetica, sans-serif;
-    margin: 5%;
+    margin: 0;
     padding: 0;
 }
 h1{
@@ -52,6 +52,7 @@ button{
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.063rem;
+    border: none;
 }
 button p{
     color: var(--font-color-primary);
@@ -84,6 +85,7 @@ button p{
 }
 .header{
     display: flex;
+    padding: 0 5%;
     justify-content: space-between;
 }
 .header h3{
@@ -91,9 +93,11 @@ button p{
 }
 .section{
     background-color: var(--background-secondary);
-    padding: 5rem 0;
+    padding: 5%;
+    margin: 3.65rem 0;
 }
 .presentation{
+    padding: 0 5%;
 }
 #name{
     color: var(--font-color-tertiary);
@@ -116,7 +120,7 @@ button p{
 .about-me{
 }
 .experience{
-
+    padding: 0 5%;
 }
 .title-company{
     width: 50%;
@@ -139,6 +143,9 @@ button p{
     color: var(--font-color-tertiary);
 }
 .projects{
+    padding: 5%;
+}
+.project{
     margin-bottom: 2.875rem;
 }
 .projects-tec{
@@ -156,3 +163,6 @@ button p{
     align-items: center;
     justify-content: center;
 }
+    footer{
+    padding: 0 5%;
+    }
