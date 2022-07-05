@@ -14,6 +14,11 @@ body{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: var(--font-color-primary);
+    font-weight: 300;
+}
 h1{
     font-size: 2rem;
     font-weight: 600;
@@ -90,6 +95,84 @@ button p{
 }
 .header h3{
     color: var(--font-color-tertiary);
+}
+nav p{
+    padding-left: 1rem;
+}
+
+#menu{
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+}
+.bar{
+    height: 1px;
+    width: 100%;
+    background-color: var(--font-color-primary);
+    /* display: block; */
+    overflow: hidden;
+    
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-6px);
+}
+#bar3{
+    transform: translateY(6px);
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li {
+    list-style: none;
+    padding: 6px 0;
+}
+.nav {
+    padding: 0;
+    margin: 30px 2px 0 0;
+    transition: .3 ease;
+    display: none;
+}
+.menu-bg, #menu-bar{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.menu-bg {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, var(--blue), var(--purple));
+    border-radius: 5%;
+    transition: .3s ease;
+}
+#menu-bar{
+    z-index: 2;
+}
+.change{
+    display: block;
+}
+.change-bg{
+    width: 400px;
+    position: absolute;
+    overflow: hidden;
+    height: 390px;
+    transform: translate(70%, -65%);
+}
+.change .bar{
+    background-color: #FFFFFF;
+}
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change #bar3{
+    transform: translateY(-6px) rotateZ(45deg);
 }
 .section{
     background-color: var(--background-secondary);
@@ -209,4 +292,8 @@ padding: 0 5%;
     to {
         opacity: 1;
     }
+}
+
+@media  {
+    
 }

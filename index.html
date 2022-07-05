@@ -23,13 +23,34 @@
 
     <header class="header">
         <h3>Portfólio</h3>
-        <nav>
-            <!-- <p>Home</p>
+        <!-- <nav class="flex-sb">
+            <p>Home</p>
             <p>Sobre mim</p>
             <p>Experiência</p>
-            <p>Projetos</p> -->
-        </nav>
-
+            <p>Projetos</p>
+        </nav> -->
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+        </div>
+        <ul class="nav" id="nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Sobre mim</a>
+            </li>
+            <li>
+                <a href="#">Experiência</a>
+            </li>
+            <li>
+                <a href="#">Projetos</a>
+            </li>
+        </ul>
+        <div class="menu-bg" id="menu-bg"></div>
     </header>
 
     <main class="">
@@ -166,6 +187,8 @@
         <p>© 2022 - Leonardo Calazans</p>
     </footer>
     <script src="./javascript/goHome.js"></script>
+    <script src="./javascript/menu.js"></script>
+    <!-- <script src="./javascript/onClickLink.js"></script>s -->
 </body>
 
 </html>
