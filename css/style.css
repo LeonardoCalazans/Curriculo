@@ -166,7 +166,7 @@ button p{
     display: block;
     position: fixed;
     top: 3.5rem;
-    right: 1.125rem;
+    right: 5%;
 }
 .change .bar{
     background-color: #FFFFFF;
@@ -190,6 +190,10 @@ button p{
 }
 #name{
     color: var(--font-color-tertiary);
+}
+.br::before{
+    content: "\a";
+    white-space: pre;
 }
 .flex-sb{
     display: flex;
@@ -369,6 +373,9 @@ padding: 0 5%;
         padding: 0 1rem;
     }
 
+    .br::before{
+        content: "";
+    }
     .presentation{
         display: flex;
     }
