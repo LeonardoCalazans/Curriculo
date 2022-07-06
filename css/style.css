@@ -23,11 +23,15 @@ h1{
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.438rem;
+    padding: 0;
+    margin: 0;
 }
 h2{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.625rem;
+    padding: 0;
+    margin: 0;
 }
 h3{
     font-size: 1rem;
@@ -92,25 +96,17 @@ button p{
     display: flex;
     padding: 0 5%;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 .header h3{
     color: var(--font-color-tertiary);
 }
-nav p{
-    padding-left: 1rem;
-}
 
-#menu{
-    width: 35px;
-    height: 35px;
-    margin: 20px;
-    cursor: pointer;
-}
 .bar{
     height: 1px;
     width: 100%;
     background-color: var(--font-color-primary);
-    /* display: block; */
     overflow: hidden;
     
     border-radius: 5px;
@@ -125,20 +121,31 @@ nav p{
 .nav li a:hover{
     font-weight: bold;
 }
-.nav li {
+.nav li{
     list-style: none;
-    padding: 6px 0;
+    padding: 6px;
 }
-.nav {
+.nav{
     padding: 0;
-    margin: 30px 2px 0 0;
+    margin: 0;
     transition: .3 ease;
     display: none;
 }
+
+#menu{
+    width: 3rem;
+    height: 1rem;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
 .menu-bg, #menu-bar{
-    top: 0;
-    right: 0;
-    position: absolute;
+
+  
 }
 .menu-bg {
     z-index: -1;
@@ -155,12 +162,11 @@ nav p{
 .change{
     display: block;
 }
-.change-bg{
-    width: 400px;
-    position: absolute;
-    overflow: hidden;
-    height: 390px;
-    transform: translate(70%, -65%);
+.change-nav{
+    display: block;
+    position: fixed;
+    top: 3.5rem;
+    right: 1.125rem;
 }
 .change .bar{
     background-color: #FFFFFF;
@@ -197,10 +203,12 @@ nav p{
     margin: 2.25rem 0;
 }
 .icon:hover{
-    filter: hue-rotate(78deg);
+    filter: hue-rotate(75deg);
     transition: all 500ms;
 }
 .about-me{
+    display: flex;
+    justify-content: space-around;
 }
 .experience{
     padding: 0 5%;
@@ -229,7 +237,7 @@ nav p{
     padding: 5%;
 }
 .project{
-    margin-bottom: 2.875rem;
+    margin: 2.875rem 0;
 }
 .projects-tec{
     color: var(--font-color-tertiary);
@@ -245,6 +253,12 @@ nav p{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.img-looper{
+    display: none;
+}
+.img-about-me{
+    display: none;
 }
 footer{
 padding: 0 5%;
@@ -263,8 +277,8 @@ padding: 0 5%;
     -moz-border-radius: 6px;
     border-radius: 6px;
     z-index: 10;
-    /* display: none; */
     }
+
 #goHome span {
     content: "▲";
     position: absolute;
@@ -277,14 +291,17 @@ padding: 0 5%;
     border: 8px solid transparent;
     border-bottom-color: var(--blue);
 }
+
 #goHome:hover {
     transition: 0.2s;
     background-color: var(--purple);
     color: var(--blue);
 }
+
 #goHome:hover span {
     border-bottom-color: var(--blue);
 }
+
 @keyframes animation {
     from {
         opacity: 0;
@@ -294,6 +311,127 @@ padding: 0 5%;
     }
 }
 
-@media  {
+@keyframes nav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 900px){
+
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
     
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4.841rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.816rem;
+    }
+
+    h4{
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.361rem;
+    }
+
+    h5{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    p{
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.75rem;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+    }
+
+    .nav li{
+        padding: 0 1rem;
+    }
+
+    .presentation{
+        display: flex;
+    }
+
+    .presentation div{
+        z-index: 10;
+        padding-bottom: 5rem;
+    }
+
+    .img-looper{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 5rem;
+        right: 0;
+        max-width: 80vw;
+    }
+
+    .content-bar{
+        content: " ";
+        display: block;
+        height: 1rem;
+        box-shadow: -1.40127px -1.40127px 1.40127px #151515;
+    }
+
+    .flex-st{
+        justify-content: flex-start;
+    }
+
+    .button-presentation{
+        margin-right: 2rem;
+        width: 30%;
+    }
+
+    .button-about-me{
+        width: 40%;
+    }
+
+    .button-about-me:first-child{
+        margin-right: 1rem;
+    }
+
+    .img-about-me{
+        display: flex;
+        align-self: center;
+        padding: 0;
+        width: 50%;
+        height: 50%;
+        padding-right: 5rem;
+    }
+
+    .projects-flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project{
+        width: 45%;
+        flex: 1 1 45%;
+    }
+
+    .project:nth-child(odd){
+        margin-right: 2.5%;
+    }
+
 }

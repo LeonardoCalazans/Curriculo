@@ -23,12 +23,22 @@
 
     <header class="header">
         <h3>Portfólio</h3>
-        <!-- <nav class="flex-sb">
-            <p>Home</p>
-            <p>Sobre mim</p>
-            <p>Experiência</p>
-            <p>Projetos</p>
-        </nav> -->
+        <div>
+            <ul class="nav" id="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#">Experiência</a>
+                </li>
+                <li>
+                    <a href="#">Projetos</a>
+                </li>
+            </ul>
+        </div>
         <div id="menu-bar">
             <div id="menu" onclick="onClickMenu()">
                 <div class="bar" id="bar1"></div>
@@ -36,70 +46,63 @@
                 <div class="bar" id="bar3"></div>
             </div>
         </div>
-        <ul class="nav" id="nav">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Sobre mim</a>
-            </li>
-            <li>
-                <a href="#">Experiência</a>
-            </li>
-            <li>
-                <a href="#">Projetos</a>
-            </li>
-        </ul>
-        <div class="menu-bg" id="menu-bg"></div>
     </header>
+    <span class="content-bar"></span>
 
     <main class="">
         <section class="presentation">
             <div>
-                <h3>OLÁ, EU SOU</h3>
-                <h1 id="name">LEONARDO CALAZANS</h1>
-                <h3>DESENVOLVEDOR FRONT-END</h3>
-            </div>
+                <div>
+                    <h3>OLÁ, EU SOU</h3>
+                    <h1 id="name">LEONARDO CALAZANS</h1>
+                    <h3>DESENVOLVEDOR FRONT-END WEB & MOBILE</h3>
+                </div>
 
-            <div class="flex-sb">
-                <button class="button-flex button-grad"><img alt="Botão para o Linkedin" src="/assets/linkedin.svg"
-                        width="24" height="24" />
-                    <p>Linkedin</p>
-                </button>
-                <button class="button-flex button-grad-blue"><img alt="Botão para o github" src="/assets/github.svg"
-                        width="24" height="24" />
-                    <p>Github</p>
-                </button>
+                <div class="flex-sb flex-st">
+                    <button class="button-flex button-presentation button-grad"><img alt="Botão para o Linkedin"
+                            src="/assets/linkedin.svg" width="24" height="24" />
+                        <p>Linkedin</p>
+                    </button>
+                    <button class="button-flex button-presentation button-grad-blue"><img alt="Botão para o github"
+                            src="/assets/github.svg" width="24" height="24" />
+                        <p>Github</p>
+                    </button>
+                </div>
             </div>
+            <img alt="Imagem" class="img-looper icon" src="/assets/Looper BG.svg">
         </section>
 
         <section class="about-me section">
-            <h2>SOBRE MIM</h2>
-            <p>
-                Possuo boas softskills e vontade de aprender. Tendo experiência em uma Fintech, trabalhando com
-                metodologias ágeis, padronização de código, arquitetura de projeto e sendo elogiado pelo bom
-                relacionamento nas equipes. É importante ter domínio em tecnologias, porém, também é importante saber
-                comunicar-se e lidar com diferentes tipos de pessoas.
-            </p>
+            <img alt="Foto de Leonardo Calazans" class="projects-no-photo img-about-me"
+                src="https://avatars.githubusercontent.com/u/60453161?s=400&u=96998b6884f4b0a00e7ae5da2551472bcebbc13b&v=4">
+            <div>
+                <h2>SOBRE MIM</h2>
+                <p>
+                    Possuo boas softskills e vontade de aprender. Tendo experiência em uma Fintech, trabalhando com
+                    metodologias ágeis, padronização de código, arquitetura de projeto e sendo elogiado pelo bom
+                    relacionamento nas equipes. É importante ter domínio em tecnologias, porém, também é importante
+                    saber comunicar-se e lidar com diferentes tipos de pessoas.
+                </p>
 
-            <div class="flex-icon">
-                <img alt="Link para facebook" class="icon" src="/assets/facebook.svg" width="24" height="24" />
-                <img alt="Link para twitter" class="icon" src="/assets/twitter.svg" width="24" height="24" />
-                <img alt="Link para youtube" class="icon" src="/assets/youtube.svg" width="24" height="24" />
-                <img alt="Link para figma" class="icon" src="/assets/figma.svg" width="24" height="24" />
-                <img alt="Link para twitch" class="icon" src="/assets/twitch.svg" width="24" height="24" />
-            </div>
+                <div class="flex-icon">
+                    <img alt="Link para facebook" class="icon" src="/assets/facebook.svg" width="24" height="24" />
+                    <img alt="Link para twitter" class="icon" src="/assets/twitter.svg" width="24" height="24" />
+                    <img alt="Link para youtube" class="icon" src="/assets/youtube.svg" width="24" height="24" />
+                    <img alt="Link para figma" class="icon" src="/assets/figma.svg" width="24" height="24" />
+                    <img alt="Link para twitch" class="icon" src="/assets/twitch.svg" width="24" height="24" />
+                </div>
 
-
-            <div class="flex-sb">
-                <button class="button-flex button-grad-blue">
-                    <img alt="Botão para baixar o currículo" src="/assets/download-cloud.svg" width="24" height="24" />
-                    <p>Currículo</p>
-                </button>
-                <button class="button-flex button-grad"><img alt="Botão para enviar E-mail" src="/assets/mail.svg"
-                        width="24" height="24" />
-                    <p>E-mail</p>
-                </button>
+                <div class="flex-sb flex-st">
+                    <button class="button-flex button-about-me button-grad-blue">
+                        <img alt="Botão para baixar o currículo" src="/assets/download-cloud.svg" width="24"
+                            height="24" />
+                        <p>Currículo</p>
+                    </button>
+                    <button class="button-flex button-about-me button-grad"><img alt="Botão para enviar E-mail"
+                            src="/assets/mail.svg" width="24" height="24" />
+                        <p>E-mail</p>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -126,55 +129,74 @@
 
         <section class="projects section">
             <h2>PROJETOS</h2>
-            <div class="project">
-                <div>
-                    <div class="projects-no-photo">
-                        <h1>FOTO</h1>
+            <div class="projects-flex-wrap">
+                <div class="project">
+                    <div>
+                        <div class="projects-no-photo">
+                            <h1>FOTO</h1>
+                        </div>
+                        <h4>Nome do projeto</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="projects-tec">Tecnologias usadas no projeto</p>
+                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
+                                src="/assets/link.svg" width="24" height="24" />
+                            <p>Visualizar</p>
+                        </button>
                     </div>
-                    <h4>Nome do projeto</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                        varius.
-                    </p>
-                    <p class="projects-tec">Tecnologias usadas no projeto</p>
-                    <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                            src="/assets/link.svg" width="24" height="24" />
-                        <p>Visualizar</p>
-                    </button>
                 </div>
-            </div>
-            <div class="project">
-                <div>
-                    <div class="projects-no-photo">
-                        <h1>FOTO</h1>
+                <div class="project">
+                    <div>
+                        <div class="projects-no-photo">
+                            <h1>FOTO</h1>
+                        </div>
+                        <h4>Nome do projeto</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="projects-tec">Tecnologias usadas no projeto</p>
+                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
+                                src="/assets/link.svg" width="24" height="24" />
+                            <p>Visualizar</p>
+                        </button>
                     </div>
-                    <h4>Nome do projeto</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                        varius.
-                    </p>
-                    <p class="projects-tec">Tecnologias usadas no projeto</p>
-                    <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                            src="/assets/link.svg" width="24" height="24" />
-                        <p>Visualizar</p>
-                    </button>
                 </div>
-            </div>
-            <div class="project">
-                <div>
-                    <div class="projects-no-photo">
-                        <h1>FOTO</h1>
+                <div class="project">
+                    <div>
+                        <div class="projects-no-photo">
+                            <h1>FOTO</h1>
+                        </div>
+                        <h4>Nome do projeto</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="projects-tec">Tecnologias usadas no projeto</p>
+                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
+                                src="/assets/link.svg" width="24" height="24" />
+                            <p>Visualizar</p>
+                        </button>
                     </div>
-                    <h4>Nome do projeto</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                        varius.
-                    </p>
-                    <p class="projects-tec">Tecnologias usadas no projeto</p>
-                    <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                            src="/assets/link.svg" width="24" height="24" />
-                        <p>Visualizar</p>
-                    </button>
+                </div>
+                <div class="project">
+                    <div>
+                        <div class="projects-no-photo">
+                            <h1>FOTO</h1>
+                        </div>
+                        <h4>Nome do projeto</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="projects-tec">Tecnologias usadas no projeto</p>
+                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
+                                src="/assets/link.svg" width="24" height="24" />
+                            <p>Visualizar</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
