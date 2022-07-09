@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Leonardo Pinto Silva Calazans">
     <meta name="description" content="Currículo / Portfólio Leonardo Pinto Silva Calazans">
-    <meta name="keywords" content="html5, tecnologia, css, curriculum, currículo, portfólio">
+    <meta name="keywords" content="html5, tecnologia, css, curriculum, currículo, portfólio, react, react-native">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Currículo / Portfólio Leonardo Pinto Silva Calazans" />
     <meta property="og:description" content="Currículo / Portfólio Leonardo Pinto Silva Calazans" />
@@ -21,21 +21,21 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="home">
         <h3>Portfólio</h3>
         <div>
             <ul class="nav" id="nav">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">Sobre mim</a>
+                    <a href="#about-me">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#">Experiência</a>
+                    <a href="#experience">Experiência</a>
                 </li>
                 <li>
-                    <a href="#">Projetos</a>
+                    <a href="#projects">Projetos</a>
                 </li>
             </ul>
         </div>
@@ -54,16 +54,19 @@
             <div>
                 <div>
                     <h3>OLÁ, EU SOU</h3>
-                    <h1 id="name">LEONARDO <spam class="br">CALAZANS</spam></h1>
+                    <h1 id="name">LEONARDO <spam class="br">CALAZANS</spam>
+                    </h1>
                     <h3>DESENVOLVEDOR FRONT-END WEB & MOBILE</h3>
                 </div>
 
                 <div class="flex-sb flex-st">
-                    <button class="button-flex button-presentation button-grad"><img alt="Botão para o Linkedin"
+                    <button class="button-flex button-presentation button-grad" type="button"
+                        onclick="onClickLink('linkedin.com/in/leo-calazans/')"><img alt="Botão para o Linkedin"
                             src="/assets/linkedin.svg" width="24" height="24" />
                         <p>Linkedin</p>
                     </button>
-                    <button class="button-flex button-presentation button-grad-blue"><img alt="Botão para o github"
+                    <button class="button-flex button-presentation button-grad-blue" type="button"
+                        onclick="onClickLink('github.com/LeonardoCalazans')"><img alt="Botão para o github"
                             src="/assets/github.svg" width="24" height="24" />
                         <p>Github</p>
                     </button>
@@ -72,7 +75,7 @@
             <img alt="Imagem" class="img-looper icon" src="/assets/Looper BG.svg">
         </section>
 
-        <section class="about-me section">
+        <section class="about-me section" id="about-me">
             <img alt="Foto de Leonardo Calazans" class="projects-no-photo img-about-me"
                 src="https://avatars.githubusercontent.com/u/60453161?s=400&u=96998b6884f4b0a00e7ae5da2551472bcebbc13b&v=4">
             <div>
@@ -85,28 +88,33 @@
                 </p>
 
                 <div class="flex-icon">
-                    <img alt="Link para facebook" class="icon" src="/assets/facebook.svg" width="24" height="24" />
-                    <img alt="Link para twitter" class="icon" src="/assets/twitter.svg" width="24" height="24" />
-                    <img alt="Link para youtube" class="icon" src="/assets/youtube.svg" width="24" height="24" />
-                    <img alt="Link para figma" class="icon" src="/assets/figma.svg" width="24" height="24" />
-                    <img alt="Link para twitch" class="icon" src="/assets/twitch.svg" width="24" height="24" />
+                    <img alt="Link para facebook" class="icon" src="/assets/facebook.svg" width="24" height="24"
+                        onclick="onClickLink('facebook.com/leonardo.pintosilva.1/')" />
+                    <img alt="Link para twitter" class="icon" src="/assets/twitter.svg" width="24" height="24"
+                        onclick="onClickLink('twitter.com/LeoPintoSilva')" />
+                    <!-- <img alt="Link para youtube" class="icon" src="/assets/youtube.svg" width="24" height="24"
+                        onclick="onClickLink('')" /> -->
+                    <img alt="Link para figma" class="icon" src="/assets/figma.svg" width="24" height="24"
+                        onclick="onClickLink('figma.com/@leonardopintosi')" />
+                    <!-- <img alt="Link para twitch" class="icon" src="/assets/twitch.svg" width="24" height="24"
+                        onclick="onClickLink('')" /> -->
                 </div>
 
                 <div class="flex-sb flex-st">
-                    <button class="button-flex button-about-me button-grad-blue">
+                    <button class="button-flex button-about-me button-grad-blue" type="button" onclick="">
                         <img alt="Botão para baixar o currículo" src="/assets/download-cloud.svg" width="24"
                             height="24" />
                         <p>Currículo</p>
                     </button>
-                    <button class="button-flex button-about-me button-grad"><img alt="Botão para enviar E-mail"
-                            src="/assets/mail.svg" width="24" height="24" />
+                    <button class="button-flex button-about-me button-grad" type="button" onclick="">
+                        <img alt="Botão para enviar E-mail" src="/assets/mail.svg" width="24" height="24" />
                         <p>E-mail</p>
                     </button>
                 </div>
             </div>
         </section>
 
-        <section class="experience">
+        <section class="experience" id="experience">
             <h2>EXPERIÊNCIA</h2>
             <div class="flex-sb experience-company">
                 <h4 class="title-company selected">Voltz</h4>
@@ -127,80 +135,86 @@
 
         </section>
 
-        <section class="projects section">
+        <section class="projects section" id="projects">
             <h2>PROJETOS</h2>
             <div class="projects-flex-wrap">
                 <div class="project">
-                    <div>
-                        <div class="projects-no-photo">
-                            <h1>FOTO</h1>
-                        </div>
-                        <h4>Nome do projeto</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                            varius.
-                        </p>
-                        <p class="projects-tec">Tecnologias usadas no projeto</p>
-                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                                src="/assets/link.svg" width="24" height="24" />
-                            <p>Visualizar</p>
-                        </button>
+                    <div class="projects-no-photo">
+                        <img src="https://raw.githubusercontent.com/LeonardoCalazans/Bikcraft/main/img/bikcraft-qualidade.svg"
+                            class="img-project" alt="Bikcraft" title="Bikcraft" />
                     </div>
+                    <h4>BikCraft</h4>
+                    <p>
+                        Site projetado para ser uma plataforma de negócios para bicicletas. Com o objetivo de
+                        oferecer a melhor experiência de usuário. Com o intuito de ajudar a comunidade a encontrar
+                        bicicletas de qualidade.
+                    </p>
+                    <p class="projects-tec">HTML CSS JAVASCRIPT PHP</p>
+                    <button class="button-flex button-projeto button-grad-blue" type="button"
+                        onclick="onClickLink('leonardocalazans.github.io/Bikcraft/')"><img
+                            alt="Visualizar projeto BikCraft" src="/assets/link.svg" width="24" height="24" />
+                        <p>Visualizar o site BikCraft</p>
+                    </button>
                 </div>
                 <div class="project">
-                    <div>
-                        <div class="projects-no-photo">
-                            <h1>FOTO</h1>
-                        </div>
-                        <h4>Nome do projeto</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                            varius.
-                        </p>
-                        <p class="projects-tec">Tecnologias usadas no projeto</p>
-                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                                src="/assets/link.svg" width="24" height="24" />
-                            <p>Visualizar</p>
-                        </button>
+                    <div class="projects-no-photo">
+                        <img src="https://raw.githubusercontent.com/LeonardoCalazans/Jokenpo/main/Img/logo-jokenpo.png"
+                            class="img-project" alt="PlantManager" title="PlantManager - Discord" />
                     </div>
+                    <h4>Jokenpo</h4>
+                    <p>
+                        Projeto desenvolvido pela empresa voltz, para os estagiários se desafiarem. Criando o jogo
+                        pedra, papel e tesoura onde o jogador tem que escolher uma das três opções para ganhar de um
+                        oponente. O projeto presenta algumas telas e os resultados são gravados no firebase. O jogo
+                        ainda será melhorado futuramente.
+                    </p>
+                    <p class="projects-tec">HTML CSS JAVASCRIPT FIREBASE</p>
+                    <button class="button-flex button-projeto button-grad-blue" type="button"
+                        onclick="onClickLink('leonardocalazans.github.io/Jokenpo/')"><img
+                            alt="Visualizar projeto Jokenpo" src="/assets/link.svg" width="24" height="24" />
+                        <p>Visualizar o site Jokenpo</p>
+                    </button>
                 </div>
                 <div class="project">
-                    <div>
-                        <div class="projects-no-photo">
-                            <h1>FOTO</h1>
-                        </div>
-                        <h4>Nome do projeto</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                            varius.
-                        </p>
-                        <p class="projects-tec">Tecnologias usadas no projeto</p>
-                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                                src="/assets/link.svg" width="24" height="24" />
-                            <p>Visualizar</p>
-                        </button>
+                    <div class="projects-no-photo">
+                        <img src="https://raw.githubusercontent.com/LeonardoCalazans/gameplay/develop/assets/icon.png"
+                            class="img-project" alt="Gameplay - Discord" title="Gameplay - Discord" />
                     </div>
+                    <h4>Gameplay - Discord</h4>
+                    <p>
+                        Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os
+                        amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui
+                        autenticação com Discord. Serão implementadas novas funcionalidades e atualmente estão sendo
+                        desenvolvidos os testes com JEST.
+                    </p>
+                    <p class="projects-tec">REACT-NATIVE TYPESCRIPT AXIOS OAUTH2 EXPO JEST </p>
+                    <button class="button-flex button-projeto button-grad-blue" type="button"
+                        onclick="onClickLink('github.com/LeonardoCalazans/gameplay')"><img
+                            alt="Visualizar projeto Gameplay" src="/assets/link.svg" width="24" height="24" />
+                        <p>Visualizar Gameplay</p>
+                    </button>
                 </div>
                 <div class="project">
-                    <div>
-                        <div class="projects-no-photo">
-                            <h1>FOTO</h1>
-                        </div>
-                        <h4>Nome do projeto</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                            varius.
-                        </p>
-                        <p class="projects-tec">Tecnologias usadas no projeto</p>
-                        <button class="button-flex button-projeto button-grad-blue"><img alt="Visualizar projeto ..."
-                                src="/assets/link.svg" width="24" height="24" />
-                            <p>Visualizar</p>
-                        </button>
+                    <div class="projects-no-photo">
+                        <img src="https://raw.githubusercontent.com/LeonardoCalazans/PlantManager-NLW5-React-Native/main/.github/logo.svg"
+                            class="img-project" alt="PlantManager" title="PlantManager - Discord" />
                     </div>
+                    <h4>PlantManager</h4>
+                    <p>
+                        Um app para gerenciar e cuidar de suas plantas. Usando uma base de dados local, você pode
+                        cadastrar suas plantas, controlar suas regras de cuidado e também acompanhar o status de suas
+                        plantas.
+                    </p>
+                    <p class="projects-tec">REACT-NATIVE TYPESCRIPT EXPO AXIOS</p>
+                    <button class="button-flex button-projeto button-grad-blue" type="button"
+                        onclick="onClickLink('github.com/LeonardoCalazans/PlantManager-NLW5-React-Native')"><img
+                            alt="Visualizar projeto PlantManager" src="/assets/link.svg" width="24" height="24" />
+                        <p>Visualizar PlantManager</p>
+                    </button>
                 </div>
             </div>
         </section>
-        <a href="#" id="goHome" onclick="scroll()" title="Ir para o topo">Topo
+        <a href="#home" id="goHome" title="Ir para o topo">Topo
             <span></span>
         </a>
     </main>
@@ -210,7 +224,7 @@
     </footer>
     <script src="./javascript/goHome.js"></script>
     <script src="./javascript/menu.js"></script>
-    <!-- <script src="./javascript/onClickLink.js"></script>s -->
+    <script src="./javascript/onClickLink.js"></script>
 </body>
 
 </html>
