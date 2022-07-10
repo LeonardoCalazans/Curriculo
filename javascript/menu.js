@@ -18,7 +18,8 @@ const scrollToIdOnClick = (event) => {
     event.preventDefault();
     const to = getScrollTopByHref(event.currentTarget);
     scrollToPosition(to);
-    onClickMenu();
+    const width = document.body.clientWidth;
+    if (width < 900) onClickMenu();
 }
 
 menuItems.forEach(item => {
