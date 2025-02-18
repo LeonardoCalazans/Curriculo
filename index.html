@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
                     <h3>OLÁ, EU SOU</h3>
                     <h1 id="name">LEONARDO <spam class="br">CALAZANS</spam>
                     </h1>
-                    <h3>DESENVOLVEDOR FRONT-END WEB & MOBILE</h3>
+                    <h3>DESENVOLVEDOR FULLSTACK</h3>
                 </div>
 
                 <div class="flex-sb flex-st">
@@ -94,7 +95,8 @@
             <div>
                 <h2>SOBRE MIM</h2>
                 <p>
-                    Possuo boas softskills, vontade de aprender e não tenho medo de sair da minha zona de conforto. Tendo experiência em uma Fintech trabalhando com metodologias ágeis, padronização de código, arquitetura de projeto e sendo elogiado pelo bom relacionamento nas equipes. É importante ter domínio em tecnologias, porém, também é importante saber comunicar-se e lidar com diferentes tipos de pessoas. 
+                    Iniciei minha carreira na fintech Voltz como desenvolvedor mobile e migrei para fullstack, adquirindo expertise em React, Next.js, TypeScript, NestJS e Node.js. Tenho experiência em BFFs, serviços routers,monitoramento com Datadog e deploys com Jenkins e Rancher. Trabalho com Clean Architecture, MongoDB e testes unitários com Jest.
+                    Além da parte técnica, sou comunicativo, colaborativo e excelente no trabalho em equipe, sempre focado em soluções eficientes e escaláveis dentro de metodologias ágeis (Scrum e Kanban).
                 </p>
 
                 <div class="flex-icon">
@@ -180,25 +182,41 @@
 
         <section class="experience" id="experience">
             <h2>EXPERIÊNCIA</h2>
-            <div class="flex-sb experience-company">
-                <h4 class="title-company selected">Voltz</h4>
-                <!-- <h4 class="title-company">Pacheco</h4> -->
-            </div>
-            <div class="m-p-0">
-                <h4>Estágio como desenvolvedor front-end mobile</h4>
-                <div class="flex-sb">
-                    <h5 class="title-company-descripition m-p-0">Voltz</h5>
-                    <h5 class="m-p-0">Agosto 2021 - Atual</h5>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <div class="experience-content">
+                            <h4>Analista de software - Desenvolvedor Fullstack</h4>
+                            <div class="flex-sb">
+                                <h5 class="title-company selected">Voltz</h5>
+                                <h5>Agosto 2021 - Janeiro 2025</h5>
+                            </div>
+                            <p>
+                                Voltz é uma Fintech que tem como objetivo ajudar pessoas a fazer negócios com o uso de tecnologia. Como desenvolvedor mobile, atuei no desenvolvimento do app de carteira digital 'Conta Voltz'. Usando tecnologias como React Native,
+                                React, Mobx, MongoDB, Firebase, Axios, Styled Components, etc.
+                                Posteriormente me tornando um desenvolvedor fullstack trabalhando com onde usando Nest.js, tendo experiencia com serviços routers, mensageria com RabbitMQ, monitoramento com Datadog e deploys com Jenkins e Rancher. Trabalho
+                                com Clean Architecture, MongoDB e testes unitários com Jest. Sendo elogiado por ser comunicativo, colaborativo e excelente no trabalho em equipe, sempre focado em soluções eficientes e escaláveis dentro de metodologias ágeis (Scrum e Kanban).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="experience-content">
+                            <h4>Analista de software - Desenvolvedor Fullstack</h4>
+                            <div class="flex-sb">
+                                <h5 class="title-company selected">Grupo Energisa</h5>
+                                <h5>Fevereiro 2025 - Atual</h5>
+                            </div>
+                            <p>
+                                Atuo como Desenvolvedor no time de Sustentabilidade, prestando suporte e manutenção para aplicações móveis desenvolvidas em Java Android e Xamarin. Minha principal responsabilidade é resolver chamados e solucionar problemas técnicos do dia a dia dos trabalhadores que utilizam o sistema móvel, garantindo seu funcionamento contínuo e eficiente.
+                                
+                                Além do suporte técnico, colaboro na identificação e correção de bugs, propondo melhorias para otimizar a experiência do usuário. Trabalho em um ambiente ágil, focado na entrega de soluções rápidas e eficazes para garantir a estabilidade das aplicações.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="m-p-0">
-                    Voltz é uma Fintech que tem como objetivo ajudar pessoas a fazer negócios com o uso de tecnologia.
-                    Como desenvolvedor front-end, atuei no desenvolvimento do app de carteira digital 'Conta Voltz', um
-                    app com fluxo conversacional para Android e iOS. Usando tecnologias como React Native, React, Mobx,
-                    MongoDB, Firebase, Axios, Styled
-                    Components, etc.
-                </p>
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
             </div>
-
         </section>
 
         <section class="projects section" id="projects">
@@ -323,6 +341,7 @@
     <script src="./javascript/goHome.js"></script>
     <script src="./javascript/menu.js"></script>
     <script src="./javascript/onClickButtons.js"></script>
+    <script src="./javascript/carousel.js"></script>
 </body>
 
 </html>

@@ -74,6 +74,7 @@ button p{
 .button-grad:hover, .button-grad-blue:hover {
     background-position: right center;
     text-decoration: none;
+    filter: hue-rotate(75deg);
 }
 .button-grad-blue {
     background-image: linear-gradient(to right, var(--purple) 0%, var(--blue)  51%, var(--purple)  100%);
@@ -208,6 +209,8 @@ button p{
 }
 .icon:hover{
     filter: hue-rotate(75deg);
+}
+.icon{
     transition: all 500ms;
 }
 .about-me{
@@ -217,6 +220,14 @@ button p{
 .experience{
     padding: 5%;
     margin-top: 3.65rem;
+}
+.experience-div{
+    display: flex;
+    justify-content: space-between;
+}
+/* pega o id experience-energisa e esconde a div */
+#experience-energisa{
+    display: none;
 }
 .title-company{
     width: 50%;

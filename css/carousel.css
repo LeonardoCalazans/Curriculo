@@ -1,0 +1,53 @@
+.experience {
+    min-height: 30rem;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    margin: 2rem;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.carousel-item {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 100%; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.carousel-item.active {
+    opacity: 1; 
+}
+
+.experience-content h4 {
+   
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 210, 223,.5);
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-button.prev {
+    left: -35px;
+}
+
+.carousel-button.next {
+    right: -35px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 210, 223,.8);
+}
