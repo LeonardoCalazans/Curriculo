@@ -20,11 +20,13 @@ function showSlide(index) {
 function nextSlide() {
     currentIndex = (currentIndex + 1) % totalItems;
     showSlide(currentIndex);
+    resetAutoPlay();
 }
 
 function prevSlide() {
     currentIndex = (currentIndex - 1 + totalItems) % totalItems;
     showSlide(currentIndex);
+    resetAutoPlay();
 }
 
 function resetAutoPlay() {
@@ -39,15 +41,5 @@ function resetAutoPlay() {
 function startAutoPlay() {
     autoPlayInterval = setInterval(nextSlide, 5000);
 }
-
-document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
-    resetAutoPlay();
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
-    resetAutoPlay();
-});
 
 startAutoPlay();
