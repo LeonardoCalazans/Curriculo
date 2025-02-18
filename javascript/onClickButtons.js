@@ -7,5 +7,5 @@ const onClickSendEmail = () => {
 }
 
 const onClickDownload = () => {
-    window.open('Curriculo-LeonardoCalazans.pdf');
+    window.open('Leonardo_Calazans_Curriculum.pdf');
 }
